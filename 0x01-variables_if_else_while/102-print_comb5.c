@@ -12,6 +12,8 @@ int main(void)
 	int j;
 	int k;
 	int l;
+	int n1;
+	int n2;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -21,15 +23,16 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					if ((i + j) < (k + l))
+					n1 = i * 10 + j;
+					n2 = k * 10 + l;
+					if (n1 < n2)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
 						putchar(' ');
 						putchar(k + '0');
 						putchar(l + '0');
-
-						if ((i + j) < 17)
+						if (n1 < 98)
 						{
 							putchar(',');
 							putchar(' ');
