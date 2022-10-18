@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - Entry point
+ * print_sign- Entry point
  * @n: parameter
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
@@ -9,7 +9,7 @@
 
 int print_sign(int n)
 {
-	if (n > 0) 
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
