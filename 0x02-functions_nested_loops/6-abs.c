@@ -3,6 +3,7 @@
 
 /**
  * _abs - Entry point
+ * @n: : parameter
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
  */

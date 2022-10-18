@@ -3,6 +3,7 @@
 
 /**
  * _isalpha - Entry point
+ * @c: parameter
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
  */

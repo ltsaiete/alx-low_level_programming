@@ -2,6 +2,7 @@
 
 /**
  * jack_bauer - Entry point
+ *
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
  */
@@ -25,7 +26,6 @@ void jack_bauer(void)
 			_putchar(rem + '0');
 
 			_putchar(':');
-			
 			div = min / 10;
 			rem = min % 10;
 			_putchar(div + '0');
