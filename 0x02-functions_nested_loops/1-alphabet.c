@@ -1,19 +1,19 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char c = 'a';
 
 	while (c <= 'z')
 	{
-		write(1, c, 1);
+		_putchar(c);
+		c++;
 	}
-	write(1, "\n", 1);
-	return (0);
+	_putchar('\n');
 }
