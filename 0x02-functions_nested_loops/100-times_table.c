@@ -13,7 +13,6 @@ void print_times_table(int n)
 	int j;
 	int mult;
 	int rem;
-	int div;
 	int p1, p2, p3;
 
 	if (n <= 15 && n >= 0)
