@@ -36,10 +36,10 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if(mult <= 9)
+				if ((i * j + 1) <= 9)
 				{
 					_putchar(' ');
-				}	
+				}
 			}
 			j++;
 		}
