@@ -1,5 +1,5 @@
 const size = 4;
-let i = 0;
+let i = 1;
 let j;
 
 while (i <= size) {
