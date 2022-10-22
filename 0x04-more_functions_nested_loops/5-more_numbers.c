@@ -8,11 +8,12 @@
 
 void more_numbers(void)
 {
-	int n = 0;
+	int n;
 	int n1, n2;
 
 	for (int i = 0; i < 10; i++)
 	{
+		n = 0;
 		while (n <= 14)
 		{
 			n1 = n / 10;
