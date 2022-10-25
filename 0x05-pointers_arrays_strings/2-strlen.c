@@ -1,9 +1,5 @@
 #include "main.h"
-<<<<<<< HEAD
-#include <stdio.h>
-=======
 
->>>>>>> 264f91a26c74bdaec727ab5e44e2d13cc7ce12e0
 /**
  * _strlen - Entry point
  * @s: parameter

@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdio.h>
 
 /**
  * rev_string - Entry point
@@ -19,8 +18,7 @@ void rev_string(char *s)
 	{
 		rev[count] = *(s + i);
 		count++;
-		
 	}
-	printf("%lu %lu %d\n", strlen(rev), strlen(s), len);
-	printf("%s\n", rev);
+	rev[count] = '\0';
+	*s = *rev;
 }

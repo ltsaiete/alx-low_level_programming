@@ -4,9 +4,11 @@
 
 int main(void)
 {
-	char str[] = "My string";
-	printf("%s\n", str);
-	rev_string(str);
-	printf("%s\n", str);
+	char s1[98];
+	char *ptr;
+
+	ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+	printf("s1 - %s\n", s1);
+	printf("ptr - %s\n", ptr);
 	return (0);
 }
