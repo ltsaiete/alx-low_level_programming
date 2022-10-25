@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * void print_rev - Entry point
+ * print_rev - Entry point
  * @s: parameter
  * Description: 'Print a text using write'
  * Return: Always 0 (Success)
