@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * void _puts - Entry point
@@ -9,4 +10,5 @@
 
 void _puts(char *str)
 {
+	puts(str);
 }
