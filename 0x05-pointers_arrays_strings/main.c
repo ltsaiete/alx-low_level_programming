@@ -5,8 +5,8 @@
 int main(void)
 {
 	char str[] = "My string";
-	printf(str);
+	printf("%s\n", str);
 	rev_string(str);
-	printf(str);
+	printf("%s\n", str);
 	return (0);
 }

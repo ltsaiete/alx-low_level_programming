@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -12,7 +13,7 @@ void rev_string(char *s)
 {
 	int len = strlen(s);
 	char rev[len];
-	int count;
+	int count = 0, i;
 
 	for (i = len - 1; i >= 0; i--)
 	{
@@ -20,5 +21,6 @@ void rev_string(char *s)
 		count++;
 		
 	}
-	printf(rev);
+	printf("%lu %lu %d\n", strlen(rev), strlen(s), len);
+	printf("%s\n", rev);
 }
