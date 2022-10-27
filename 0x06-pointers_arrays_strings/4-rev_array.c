@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strcmp - concatenates two strings.
- * @s1: function argument
- * @s2: function argument
+ * reverse_array - concatenates two strings.
+ * @a: function argument
+ * @n: function argument
  * Return: Always 0.
  */
 
