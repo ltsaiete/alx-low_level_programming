@@ -20,11 +20,12 @@ void print_array(int *a, int n)
 
 int main(void)
 {
-	int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024};
+	char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+	char *ptr;
 
-	print_array(a, sizeof(a) / sizeof(int));
-	reverse_array(a, sizeof(a) / sizeof(int));
-	print_array(a, sizeof(a) / sizeof(int));
+	ptr = cap_string(str);
+	printf("%s", ptr);
+	printf("%s", str);
 
 	return (0);
 }

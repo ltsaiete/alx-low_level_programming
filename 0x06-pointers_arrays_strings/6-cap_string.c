@@ -11,10 +11,12 @@
 char *cap_string(char *s)
 {
 	int i;
+	*s = toupper(*s);
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		*(s + i) = toupper(*(s + i));
+		if (*(s + i) == ' ' || *(s + i) == '.')
+			*(s + i + 1) = toupper(*(s + i + 1));
 	}
 
 	return (s);
