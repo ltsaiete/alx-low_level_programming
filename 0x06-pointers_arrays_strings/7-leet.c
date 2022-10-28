@@ -5,6 +5,8 @@
 /**
  * leet - concatenates two strings.
  * @s: Function argument
+ * checkChar - Checks if a char can be mapped
+ * @ch: The char arg
  * Return: Always 0.
  */
 
