@@ -10,13 +10,13 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i, aux;
 
 	for (i = 0; i < n; i++)
 	{
 		n--;
-		*(a + i) += *(a + n);
-		*(a + n) = *(a + i) - *(a + n);
-		*(a + i) -= *(a + n);
+		aux = *(a + i);
+		*(a + i) = *(a + n);
+		*(a + n) = aux;
 	}
 }
