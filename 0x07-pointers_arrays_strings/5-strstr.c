@@ -1,4 +1,3 @@
-#include <string.h>
 #include <stdio.h>
 
 /**
@@ -13,6 +12,11 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	char *ch = NULL;
+
+	if (*needle == '\0')
+	{
+		ch = haystack;
+	}
 
 	while (*haystack != '\0')
 	{
@@ -30,7 +34,6 @@ char *_strstr(char *haystack, char *needle)
 
 				i++;
 			}
-			break;
 		}
 
 		haystack++;
