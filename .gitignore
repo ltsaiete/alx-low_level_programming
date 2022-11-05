@@ -23,7 +23,6 @@ c
 
 # Libraries
 *.lib
-*.a
 *.la
 *.lo
 
