@@ -1,6 +1,7 @@
 # Test files
 main.c
 _putchar.c
+c
 
 # Prerequisites
 *.d

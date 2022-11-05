@@ -1,4 +1,3 @@
-
 /**
  * wildcmp - prints a string
  * @s1: the string to compare
