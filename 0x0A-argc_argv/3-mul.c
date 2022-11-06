@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	int mult;
 
-	if (argc < 2)
+	if (argc <= 2)
 	{
 		puts("Error");
 		exit(EXIT_FAILURE);

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -14,18 +15,25 @@ int main(int argc, char **argv)
 {
 	int sum = 0;
 	int count = 1;
+	int i;
+	int len;
+	int n;
 
 	while (count < argc)
 	{
-		if (atoi(argv[count]))
+		len = strlen(argv[count]);
+		for (i = 0; i < len; i++)
 		{
-			sum += atoi(argv[count]);
+			n = (int)(argv[count][i]) + 0;
+			if (!(n >= 48 && n <= 57))
+			{
+				puts("Error");
+				exit(EXIT_FAILURE);
+			}
 		}
-		else
-		{
-			puts("Error");
-			exit(EXIT_FAILURE);
-		}
+
+		sum += atoi(argv[count]);
+
 		count++;
 	}
 
