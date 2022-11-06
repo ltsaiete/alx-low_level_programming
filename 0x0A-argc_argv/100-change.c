@@ -73,5 +73,5 @@ int main(int argc, char **argv)
 	ch = changes(coins, number);
 	printf("%d\n", ch);
 
-	exit(EXIT_FAILURE);
+	exit(EXIT_SUCCESS);
 }
