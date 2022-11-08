@@ -5,22 +5,28 @@
  * @size: Size of the array
  * @c: the initial char
  *
- * Return - a pointer to the array or NULL
+ * Return: a pointer to the array or NULL
  *
  */
 char *create_array(unsigned int size, char c)
 {
+	char *str;
+	int i = 0;
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
+	str = malloc(sizeof(char) * size);
 
-	char *str;
 	if (str == NULL)
 		return (NULL);
 
-	str = malloc(sizeof(char) * size);
-	str[0] = c;
+	while (i < size)
+	{
+		str[i] = c;
+		i++;
+	}
 
 	return (str);
 }
