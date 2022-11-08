@@ -9,7 +9,7 @@
  *
  */
 
-void free_grid(int **grid, int height)
+void free_grid(int **grid, int __attribute__((__unused__)) height)
 {
 	free(grid);
 }

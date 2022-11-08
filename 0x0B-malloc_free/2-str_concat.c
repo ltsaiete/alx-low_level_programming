@@ -12,20 +12,21 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	int size = strlen(s1) + strlen(s2);
+	char *str = malloc(sizeof(char) * size);
+	int i = 0, j = 0;
+	int s1len = strlen(s1);
+
 	if (s1 == NULL)
 		s1[0] = '\0';
 
 	if (s2 == NULL)
 		s2[0] = '\0';
 
-	unsigned int size = strlen(s1) + strlen(s2);
-	char *str = malloc(sizeof(char) * size);
-	int i = 0, j = 0;
-
 	if (str == NULL)
 		return (NULL);
 
-	while (i < strlen(s1))
+	while (i < s1len)
 	{
 		str[i] = s1[i];
 		i++;
