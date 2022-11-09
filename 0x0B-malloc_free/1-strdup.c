@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 
 	size = strlen(str);
-	newStr = malloc(sizeof(char) * size);
+	newStr = malloc(sizeof(char) * size + 1);
 
 	if (newStr == NULL)
 		return (NULL);
@@ -33,6 +33,7 @@ char *_strdup(char *str)
 		newStr[i] = str[i];
 		i++;
 	}
+	newStr[i] = '\0';
 
 	return (newStr);
 }
