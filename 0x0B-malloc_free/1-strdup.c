@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * _strdup - returns a pointer to a new string which is a
@@ -12,12 +13,17 @@
 
 char *_strdup(char *str)
 {
-	int size = strlen(str);
-	char *newStr = malloc(sizeof(char) * size);
+	int size;
+	char *newStr;
 	int i = 0;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
+
+	size = strlen(str);
+	newStr = malloc(sizeof(char) * size);
 
 	if (newStr == NULL)
 		return (NULL);
