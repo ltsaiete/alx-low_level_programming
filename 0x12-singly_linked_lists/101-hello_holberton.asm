@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main(void)
 {
 	register int    syscall_no  asm("rax") = 1;
