@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * add_nodeint_end - adds a new node at the end of a listint_t list.
  * @head: The beginning of the list
@@ -18,14 +19,15 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL);
 	}
 
+	new->n = n;
+	new->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = new;
 		return (new);
 	}
 
-	new->n = n;
-	new->next = NULL;
 	aux = *head;
 
 	while (aux->next != NULL)
