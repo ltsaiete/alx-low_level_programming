@@ -66,7 +66,7 @@ int main(void)
 	int n;
 
 	head = _create_list(2, -12, 6);
-	n = pop_listint(NULL);
+	n = pop_listint(&head);
 	printf("-> %d\n", n);
 	print_listint(head);
 	_free_listint(head);
