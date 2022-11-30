@@ -51,7 +51,7 @@ int main(void)
 	listint_t *head;
 	size_t n;
 
-	head = _create_list(2, 9, 6);
+	head = _create_list(3, 9, 6, 8);
 	n = print_listint(head);
 	printf("-> %lu elements\n", n);
 	free_listint2(&head);
