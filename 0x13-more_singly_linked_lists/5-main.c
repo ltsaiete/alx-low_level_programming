@@ -48,13 +48,7 @@ listint_t *_create_list(unsigned int n, ...)
  */
 int main(void)
 {
-	listint_t *head;
-	size_t n;
-
-	head = _create_list(3, 9, 6, 8);
-	n = print_listint(head);
-	printf("-> %lu elements\n", n);
-	free_listint2(&head);
-	printf("%p\n", (void *)head);
+	free_listint2(NULL);
+	printf("Freed !\n");
 	return (0);
 }
