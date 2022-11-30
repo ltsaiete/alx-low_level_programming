@@ -65,7 +65,7 @@ int main(void)
 	listint_t *head;
 	int n;
 
-	head = _create_list(2, 9, 6);
+	head = _create_list(2, -12, 6);
 	n = pop_listint(&head);
 	printf("-> %d\n", n);
 	print_listint(head);
