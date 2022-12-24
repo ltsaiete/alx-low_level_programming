@@ -1,47 +1,6 @@
 #include "main.h"
 
 /**
- * print_times_table - Entry point
- * @n: argument
- * Description: 'Print a text using write'
- * Return: Always 0 (Success)
- */
-
-void print_times_table(int n)
-{
-	int i = 0;
-	int j;
-	int mult;
-	int rem;
-	int p1, p2, p3;
-
-	if (n <= 15 && n >= 0)
-	{
-
-		while (i <= n)
-		{
-			j = 0;
-
-			while (j <= n)
-			{
-				mult = i * j;
-				p1 = mult / 100;
-				rem = mult % 100;
-				p2 = rem / 10;
-				p3 = rem % 10;
-
-				void print_digit(mult, p1, p2, p3);
-				print_spaces(j, i, n);
-
-				j++;
-			}
-			_putchar('\n');
-			i++;
-		}
-	}
-}
-
-/**
  * print_digit - print digits
  * @mult: argument
  * @p1: argument
@@ -91,6 +50,47 @@ void print_spaces(int j, int i, int n)
 		if ((i * (j + 1)) < 10)
 		{
 			_putchar(' ');
+		}
+	}
+}
+
+/**
+ * print_times_table - Entry point
+ * @n: argument
+ * Description: 'Print a text using write'
+ * Return: Always 0 (Success)
+ */
+
+void print_times_table(int n)
+{
+	int i = 0;
+	int j;
+	int mult;
+	int rem;
+	int p1, p2, p3;
+
+	if (n <= 15 && n >= 0)
+	{
+
+		while (i <= n)
+		{
+			j = 0;
+
+			while (j <= n)
+			{
+				mult = i * j;
+				p1 = mult / 100;
+				rem = mult % 100;
+				p2 = rem / 10;
+				p3 = rem % 10;
+
+				print_digit(mult, p1, p2, p3);
+				print_spaces(j, i, n);
+
+				j++;
+			}
+			_putchar('\n');
+			i++;
 		}
 	}
 }
