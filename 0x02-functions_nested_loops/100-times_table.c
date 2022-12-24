@@ -30,36 +30,67 @@ void print_times_table(int n)
 				p2 = rem / 10;
 				p3 = rem % 10;
 
-				if (mult < 10)
-				{
-					_putchar(p3 + '0');
-				} else if (mult < 100)
-				{
-					_putchar(p2 + '0');
-					_putchar(p3 + '0');
-				} else
-				{
-					_putchar(p1 + '0');
-					_putchar(p2 + '0');
-					_putchar(p3 + '0');
-				}
-				if (j < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-					if ((i * (j + 1)) < 100)
-					{
-						_putchar(' ');
-					}
-					if ((i * (j + 1)) < 10)
-					{
-						_putchar(' ');
-					}
-				}
+				void print_digit(mult, p1, p2, p3);
+				print_spaces(j, i, n);
+
 				j++;
 			}
 			_putchar('\n');
 			i++;
+		}
+	}
+}
+
+/**
+ * print_digit - print digits
+ * @mult: argument
+ * @p1: argument
+ * @p2: argument
+ * @p3: argument
+ * Description: 'Print a text using write'
+ * Return: Always 0 (Success)
+ */
+
+void print_digit(int mult, int p1, int p2, int p3)
+{
+	if (mult < 10)
+	{
+		_putchar(p3 + '0');
+	}
+	else if (mult < 100)
+	{
+		_putchar(p2 + '0');
+		_putchar(p3 + '0');
+	}
+	else
+	{
+		_putchar(p1 + '0');
+		_putchar(p2 + '0');
+		_putchar(p3 + '0');
+	}
+}
+
+/**
+ * print_spaces - print spaces
+ * @j: argument
+ * @i: argument
+ * @n: argument
+ * Description: 'Print a text using write'
+ * Return: Always 0 (Success)
+ */
+void print_spaces(int j, int i, int n)
+{
+	if (j < n)
+	{
+		_putchar(',');
+		_putchar(' ');
+		if ((i * (j + 1)) < 100)
+		{
+			_putchar(' ');
+		}
+		if ((i * (j + 1)) < 10)
+		{
+			_putchar(' ');
 		}
 	}
 }
