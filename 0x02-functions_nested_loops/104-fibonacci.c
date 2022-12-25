@@ -8,17 +8,17 @@
 
 int main(void)
 {
-	unsigned long n1 = 1, n2 = 1, next;
+	float n1 = 1, n2 = 1, next;
 	int i;
 
 	for (i = 0; i < 97; i++)
 	{
-		printf("%lu, ", n2);
+		printf("%.0f, ", n2);
 		next = n1 + n2;
 		n1 = n2;
 		n2 = next;
 	}
-	printf("%lu\n", n2);
+	printf("%.0f\n", n2);
 
 	return (0);
 }
