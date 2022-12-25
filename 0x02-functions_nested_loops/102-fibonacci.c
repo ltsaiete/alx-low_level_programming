@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the first 50 Fibonacci numbers
@@ -15,7 +16,7 @@ int main(void)
 		printf("%d, ", n2);
 		next = n1 + n2;
 		n1 = n2;
-		n2 = next;
+		n2 = abs(next);
 	}
 
 	putchar('\n');
