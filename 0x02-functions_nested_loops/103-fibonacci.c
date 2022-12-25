@@ -13,7 +13,7 @@ int main(void)
 
 	while (next <= 4000000)
 	{
-		if (n2 % 2 != 0)
+		if (n2 % 2 == 0)
 		{
 			sum += n2;
 		}
