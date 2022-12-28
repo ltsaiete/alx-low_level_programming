@@ -35,7 +35,6 @@ int main(void)
 	long factor = 2;
 	long largest = factor;
 	int result = 0;
-	printf("%lu\n", number);
 
 	while (number > 1)
 	{
