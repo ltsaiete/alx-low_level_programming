@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _pow - Calculates the power of x raised by y
@@ -61,7 +59,8 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	number *= _pow(10, --numberLength);
+	number = number * _pow(10, --numberLength);
+	number += 0.001;
 	number *= signal;
 	return (number);
 }
