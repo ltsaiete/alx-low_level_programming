@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -11,7 +12,7 @@
 
 int _pow(int x, int y)
 {
-	if (y == 0)
+	if (y <= 0)
 		return (1);
 
 	return (x * _pow(x, y - 1));
@@ -40,12 +41,11 @@ int ascii_to_int(int ascii)
 int _atoi(char *s)
 {
 	int ascii, numberLength = 0, signal = 1;
-	float number = 0;
+	double number = 0;
 	char previous = '\0';
 
-	while (*s != 0)
+	while (*s != '\0')
 	{
-
 		ascii = *s;
 		if (previous == '\0' || previous == *(s - 1))
 		{
@@ -53,7 +53,7 @@ int _atoi(char *s)
 			if (ascii >= 48 && ascii <= 57)
 			{
 				previous = *s;
-				number += (float)ascii_to_int(ascii) / _pow(10, numberLength);
+				number += (double)ascii_to_int(ascii) / _pow(10, numberLength);
 				numberLength++;
 			}
 			if (*s == '-')
