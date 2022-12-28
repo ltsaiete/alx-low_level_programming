@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdlib.h>
+#include <limits.h>
 #include "main.h"
 /**
  * _pow - Calculates the power of x raised by y
@@ -34,7 +35,10 @@ int _log10(int n)
  */
 void print_number(int n)
 {
-	int digits, i, div, power;
+	int digits, i, div, power, number = n;
+
+	if (n == INT_MIN)
+		number++;
 
 	if (n == 0)
 	{
@@ -42,19 +46,21 @@ void print_number(int n)
 	}
 	else
 	{
-		digits = _log10(abs(n));
+		number = abs(number);
+		digits = _log10(number);
 
 		if (n < 0)
 		{
 			_putchar('-');
-			n = n * (-1);
 		}
 
 		for (i = digits; i >= 0; i--)
 		{
+			if (n == INT_MIN && i == 0)
+				number++;
 			power = _pow(10, i);
-			div = abs(n / power);
-			n -= power * div;
+			div = abs(number / power);
+			number -= power * div;
 			_putchar(div + '0');
 		}
 	}
