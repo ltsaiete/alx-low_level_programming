@@ -36,7 +36,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		pos2--;
 		number2 = '0';
 		number1 = '0';
-		rest = 0;
 
 		if (size_r < 0)
 			return (0);
@@ -50,6 +49,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		number1 = ascii_to_int(number1);
 		number2 = ascii_to_int(number2);
 		sum = number1 + number2 + rest;
+		rest = 0;
 		if (sum > 9)
 		{
 			sum -= 10;
