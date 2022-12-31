@@ -29,7 +29,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int pos1 = strlen(n1), pos2 = strlen(n2), number1, number2, sum, rest = 0;
 
 	r[--size_r] = '\0';
-	while (pos1 >= 0 || pos2 >= 0)
+	while (pos1 > 0 || pos2 > 0)
 	{
 		size_r--;
 		pos1--;
