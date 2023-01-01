@@ -9,20 +9,22 @@
 
 char *rot13(char *s)
 {
-	int ascii;
+	int ascii, i;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		ascii = *s;
+		ascii = s[i];
 
-		if (((ascii - 65 + 13) < 26) || ((ascii - 97 + 13) < 26))
+		if (ascii >= 65 && ascii <= 90)
 		{
-			ascii += 13;
-
-			*s = ascii;
+			ascii = ((ascii - 65 + 13) % 26) + 65;
+		}
+		else if (ascii >= 97 && ascii <= 122)
+		{
+			ascii = ((ascii - 97 + 13) % 26) + 97;
 		}
 
-		s++;
+		s[i] = ascii;
 	}
 
 	return (s);
