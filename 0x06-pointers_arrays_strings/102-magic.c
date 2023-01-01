@@ -16,7 +16,7 @@ int main(void)
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-  *p = 98;
+  *(&a[2]) = 98; // Dereference the address of a[2] to modify the value stored at that address
   /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return (0);
