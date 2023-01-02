@@ -10,16 +10,6 @@
 
 void print_buffer(char *b, int size)
 {
-	/**
-	 * Print \n only if <= 0
-	 * ciclo para incrementar (i) de 10 em 10
-	 * ciclo para incrementar (j) 2 a 2
-	 * -> print (b[i + j] e b[i + j + 1])
-	 * -> print space
-	 * ciclo para incrementar j
-	 * -> print (b[i + j])
-	 */
-
 	int i, j;
 
 	if (size <= 0)
@@ -44,7 +34,6 @@ void print_buffer(char *b, int size)
 				if (j % 2 != 0)
 					putchar(' ');
 			}
-
 			for (j = 0; j < 10; j++)
 			{
 				if (j + i == size)
@@ -58,7 +47,6 @@ void print_buffer(char *b, int size)
 					printf("%c", b[i + j]);
 				}
 			}
-
 			putchar('\n');
 		}
 	}
