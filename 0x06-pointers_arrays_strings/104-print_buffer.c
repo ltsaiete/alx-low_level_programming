@@ -1,6 +1,24 @@
 #include "main.h"
 
 /**
+ * __putchar -  prints a char
+ * @c: the char
+ *
+ * Return: void
+ */
+void __putchar(char c)
+{
+	if ((c >= '\0' && c <= '\7') || c == '\n' || c == '\t')
+	{
+		putchar('.');
+	}
+	else
+	{
+		putchar(c);
+	}
+}
+
+/**
  * print_buffer -  prints a buffer.
  * @b: the buffer
  * @size: size of the buffer
@@ -38,14 +56,7 @@ void print_buffer(char *b, int size)
 			{
 				if (j + i == size)
 					break;
-				if ((b[i + j] >= '\0' && b[i + j] <= '\7') || b[i + j] == '\n')
-				{
-					putchar('.');
-				}
-				else
-				{
-					printf("%c", b[i + j]);
-				}
+				__putchar(b[i + j]);
 			}
 			putchar('\n');
 		}
