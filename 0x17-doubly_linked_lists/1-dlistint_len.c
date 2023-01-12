@@ -12,6 +12,9 @@ size_t dlistint_len(const dlistint_t *h)
 	dlistint_t *temp;
 	int count = 0;
 
+	if (h == NULL)
+		return (0);
+
 	temp = malloc(sizeof(dlistint_t));
 	if (temp == NULL)
 		return (0);
