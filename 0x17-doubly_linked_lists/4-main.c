@@ -50,7 +50,7 @@ int main(void)
 	dlistint_t *list;
 	size_t n;
 
-	list = _create_dlist(1, 9);
+	list = _create_dlist(2, 9, 6);
 	n = print_dlistint(list);
 	printf("-> %lu elements\n", n);
 	free_dlistint(list);
