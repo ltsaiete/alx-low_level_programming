@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	{
 		strcat(s, av[i]);
 		if (i < ac - 1)
-			strcat(s, '\n');
+			strcat(s, "\n");
 	}
 
 	return (s);
