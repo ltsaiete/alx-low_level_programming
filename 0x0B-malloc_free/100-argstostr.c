@@ -16,17 +16,17 @@ char *argstostr(int ac, char **av)
 	int i, len = 0;
 	char *s;
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		len += strlen(av[i]);
 	}
-	s = malloc((len + ac - 1) * sizeof(char));
+	s = malloc((len + ac) * sizeof(char));
 
 	if (s == NULL)
 		return (NULL);
 
 	s[0] = '\0';
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		strcat(s, av[i]);
 		strcat(s, "\n");
