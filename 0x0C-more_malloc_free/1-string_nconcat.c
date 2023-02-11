@@ -7,7 +7,7 @@
  * @s2: second string
  * @n: bytes of n2 to concatenate
  *
- * Return - the concatenation of the strings
+ * Return: the concatenation of the strings
  * NULL if failed
  */
 
