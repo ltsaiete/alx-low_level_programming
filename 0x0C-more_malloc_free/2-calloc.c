@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	arr = malloc(size * nmemb);
 
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < nmemb * size; i++)
 	{
 		*((char *)arr + i) = 0;
 	}
