@@ -13,7 +13,7 @@ $(NAME): $(OBJ)
 	${CC} -c -o $@ $<
 
 clean:
-	rm -f $(wildcard *~) ${NAME}
+	rm -f *~ ${NAME}
 
 oclean:
 	rm -f ${OBJ}
