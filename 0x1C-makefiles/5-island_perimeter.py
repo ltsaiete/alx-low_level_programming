@@ -45,7 +45,6 @@ def island_perimeter(grid):
             perimeter = perimeter + island_cells[i]
 
         if i != 0 and island_cells[i] != island_cells[i-1]:
-            print(i)
             perimeter = perimeter + abs(island_cells[i] - island_cells[i-1])
 
         # Add the right edge to perimeter
