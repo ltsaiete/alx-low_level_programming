@@ -41,7 +41,7 @@ def island_perimeter(grid):
         if (i == 0):
             perimeter = perimeter + island_cells[i]
 
-        elif i == len(island_cells) - 1:
+        if i == len(island_cells) - 1:
             perimeter = perimeter + island_cells[i]
 
         if i != 0 and island_cells[i] != island_cells[i-1]:
