@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		".env*": "dotenv",
+		"search_algos.h": "c"
+	}
+}
